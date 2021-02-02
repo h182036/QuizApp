@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">The Quiz App</string>
+    <string name="add_new_person">Add new person</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="add_button">add</string>
+    <string name="question_list">Question List</string>
+    <string name="result">Result</string>
+    <string name="correct_answers">correct answer(s)</string>
+    <string name="questions">Questions</string>
+    <string name="katteNavn">Name</string>
+    <string name="save">Save</string>
+    <string name="who_is_this">Who is this?</string>
+    <string name="check_answer">Check</string>
+    <string name="restart">Restart</string>
+    <string name="home">Home</string>
+</resources>
