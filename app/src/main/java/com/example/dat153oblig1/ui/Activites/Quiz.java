@@ -1,4 +1,4 @@
-package com.example.dat153oblig1.ui.main;
+package com.example.dat153oblig1.ui.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 

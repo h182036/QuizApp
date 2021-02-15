@@ -1,4 +1,4 @@
-package com.example.dat153oblig1.ui.main;
+package com.example.dat153oblig1.ui.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +28,7 @@ import com.example.dat153oblig1.Spørsmål;
 
 import java.util.UUID;
 
-import static com.example.dat153oblig1.ui.main.MainActivity.SQLiteHelper;
+import static com.example.dat153oblig1.ui.Activites.MainActivity.SQLiteHelper;
 
 
 public class NyKattActivity extends AppCompatActivity {

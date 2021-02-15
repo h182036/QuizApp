@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".ui.main.ResultatActivity">
+    tools:context=".ui.Activites.ResultatActivity">
 
 
     <TextView
@@ -67,23 +67,14 @@
 
             <ImageButton
                 android:id="@+id/restartButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="99dp"
+                android:layout_height="104dp"
                 android:background="@drawable/restart"
                 android:scaleX="0.4"
                 android:scaleY="0.4"
 
                 ></ImageButton>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/restart"
-                android:textColor="@color/white"
-                android:textSize="30dp"
-                android:textStyle="bold">
-
-            </TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -95,24 +86,14 @@
 
             <ImageButton
                 android:id="@+id/homeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="81dp"
+                android:layout_height="104dp"
                 android:background="@drawable/home"
                 android:scaleX="0.4"
                 android:scaleY="0.4">
 
             </ImageButton>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/home"
-                android:textColor="@color/white"
-                android:textSize="30dp"
-                android:textStyle="bold">
-
-            </TextView>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

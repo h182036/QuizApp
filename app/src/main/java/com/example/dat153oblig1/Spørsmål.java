@@ -29,11 +29,12 @@ public class Spørsmål extends Application {
     /**
      * @param index
      */
+    /**
     public void deleteKatt(int index) {
 
         katter.remove(index);
     }
-
+    */
     public void clear() {
 
         katter.clear();

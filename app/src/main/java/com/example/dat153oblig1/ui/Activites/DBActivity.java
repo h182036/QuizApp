@@ -1,4 +1,4 @@
-package com.example.dat153oblig1.ui.main;
+package com.example.dat153oblig1.ui.Activites;
 
 import com.example.dat153oblig1.Katt;
 import com.example.dat153oblig1.R;

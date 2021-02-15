@@ -20,12 +20,12 @@
         android:name="com.example.dat153oblig1.Spørsmål">
 
 
-        <activity android:name=".ui.main.NyKattActivity" />
-        <activity android:name=".ui.main.ResultatActivity" />
-        <activity android:name=".ui.main.Quiz" />
-        <activity android:name=".ui.main.DBActivity" />
+        <activity android:name=".ui.Activites.NyKattActivity" />
+        <activity android:name=".ui.Activites.ResultatActivity" />
+        <activity android:name=".ui.Activites.Quiz" />
+        <activity android:name=".ui.Activites.DBActivity" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.Activites.MainActivity"
             android:theme="@style/Theme.DAT153Oblig1.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

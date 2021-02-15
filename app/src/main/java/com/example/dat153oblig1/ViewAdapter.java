@@ -18,10 +18,10 @@ import java.util.ArrayList;
 import android.view.View;
 import android.util.Log;
 
-import com.example.dat153oblig1.ui.main.MainActivity;
+import com.example.dat153oblig1.ui.Activites.MainActivity;
 
 
-public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.MyViewHolder> {
+public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.MyViewHolder>  {
 
     Context context;
     ArrayList<Katt> katter;
@@ -62,32 +62,29 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.MyViewHolder> 
         /**
          * Holding in on the element makes it pop up and you can delete the element.
          */
-        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                System.out.println("You longed clicked with: " + position);
-                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (which) {
-                            case DialogInterface.BUTTON_POSITIVE:
-                                Log.e("Answer", "Yes");
-                                MainActivity.SQLiteHelper.deleteData(katter.get(position).getId());
-                                katter.remove(position);
-                                notifyDataSetChanged();
-                                break;
+        holder.itemView.setOnLongClickListener(v -> {
+            System.out.println("You longed clicked with: " + position);
+            DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    switch (which) {
+                        case DialogInterface.BUTTON_POSITIVE:
+                            Log.e("Answer", "Yes");
+                            MainActivity.SQLiteHelper.deleteData(katter.get(position).getId());
+                            katter.remove(position);
+                            notifyDataSetChanged();
+                            break;
 
-                            case DialogInterface.BUTTON_NEGATIVE:
-                                Log.e("Answer", "No");
-                                break;
-                        }
+                        case DialogInterface.BUTTON_NEGATIVE:
+                            Log.e("Answer", "No");
+                            break;
                     }
-                };
-                AlertDialog.Builder ab = new AlertDialog.Builder(context);
-                ab.setMessage("Are you sure to delete?").setPositiveButton("Yes", dialogClickListener)
-                        .setNegativeButton("No", dialogClickListener).show();
-                return true;
-            }
+                }
+            };
+            AlertDialog.Builder ab = new AlertDialog.Builder(context);
+            ab.setMessage("Delete?").setPositiveButton("Yes", dialogClickListener)
+                    .setNegativeButton("No", dialogClickListener).show();
+            return true;
         });
 
 
