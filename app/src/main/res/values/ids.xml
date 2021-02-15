@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nameInputSharedPreferences" type="id" />
+    <item name="saveNameSharedPreferences" type="id" />
+</resources>
