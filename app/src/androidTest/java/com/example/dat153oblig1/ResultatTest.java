@@ -5,6 +5,7 @@ import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
 import com.example.dat153oblig1.ui.Activites.MainActivity;
+import com.example.dat153oblig1.ui.Activites.Quiz;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -49,7 +50,7 @@ public class ResultatTest {
         onView(withId(R.id.checkAnswerButton)).perform(click());
 
         //sjekker at resultatet er 0 av 3
-        onView(withId(R.id.scoreText)).check(matches(withText(0)));
+        onView(withId(R.id.scoreText)).check(matches(withText("0/3")));
 
         /**
          * First time running the app the code-snippet under must be included
