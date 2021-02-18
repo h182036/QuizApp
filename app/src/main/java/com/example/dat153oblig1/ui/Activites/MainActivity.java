@@ -136,12 +136,12 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Add images and names of the cats
      */
-    /**
+
     public void addQuestions() {
         ((Spørsmål) this.getApplication()).addKatt("", "flekken1", getResources().getDrawable(R.drawable.flekken1));
         ((Spørsmål) this.getApplication()).addKatt("", "flekken2", getResources().getDrawable(R.drawable.flekken2));
         ((Spørsmål) this.getApplication()).addKatt("", "flekken3", getResources().getDrawable(R.drawable.flekken3));
-z
+
     }
-    */
+
 }
